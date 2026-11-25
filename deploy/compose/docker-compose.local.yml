@@ -1,0 +1,7 @@
+# Use after compose.yml to build the relay from the checkout.
+services:
+  relay:
+    image: !reset null
+    build:
+      context: ../..
+      dockerfile: Dockerfile
